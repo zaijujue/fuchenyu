@@ -3,129 +3,176 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>傅辰钰 | 河南地矿职业学院 — 开发者 · 无人机飞手 · 创造者</title>
-<meta name="description" content="傅辰钰，河南地矿职业学院22级无人机一班，全栈开发者，Python / AI / 无人机测绘。10+项目零失败交付，个人作品云端24/7运行。">
-<meta name="keywords" content="傅辰钰,河南地矿职业学院,无人机,22级无人机一班,Python,全栈开发,AI应用">
+<title>傅辰钰 | 河南地矿职业学院 — 无人机飞手 · 全栈开发者 · AI 实践者</title>
+<meta name="description" content="傅辰钰，河南地矿职业学院22级无人机一班。15+项目零失败，全栈独立开发，无人机航测精度行业领先。写得了代码，飞得了天。">
+<meta name="keywords" content="傅辰钰,河南地矿职业学院,无人机,22级无人机一班,全栈开发,Python,AI,航测,建模">
 <meta name="robots" content="index,follow">
 <link rel="canonical" href="https://zaijujue.github.io/fuchenyu/">
-<meta property="og:title" content="傅辰钰 — 以代码丈量世界，用无人机改写规则">
-<meta property="og:description" content="河南地矿职业学院22级无人机一班 · 全栈开发者 · AI 应用实践者">
+<meta property="og:title" content="傅辰钰 — 代码即权力，天空无边界">
+<meta property="og:description" content="河南地矿职业学院22级无人机一班 · 全栈开发者 · 15+项目零失败交付">
 <meta property="og:url" content="https://zaijujue.github.io/fuchenyu/">
 <meta property="og:type" content="website">
-<meta name="theme-color" content="#0a0a1a">
+<meta name="theme-color" content="#0a0a0f">
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"Person","name":"傅辰钰","description":"傅辰钰，河南地矿职业学院22级无人机一班学生，全栈开发者","url":"https://zaijujue.github.io/fuchenyu/","affiliation":{"@type":"EducationalOrganization","name":"河南地矿职业学院"},"homeLocation":{"@type":"City","name":"河南省安阳市"}}
 </script>
+
 <style>
-:root{--bg:#050510;--surface:#0d0d22;--card:#141433;--accent:#00e5ff;--accent2:#ff4081;--gold:#ffd740;--green:#69f0ae;--text:#e0e0f0;--text2:#8080a0;--border:rgba(255,255,255,0.06)}
+:root{
+  --bg:#080810;
+  --bg2:#0d0d1a;
+  --card:#131328;
+  --border:rgba(255,255,255,0.05);
+  --c1:#c4a35a;
+  --c2:#e8d5a0;
+  --c3:#fff;
+  --t1:#f0ece4;
+  --t2:#8a8578;
+  --accent:linear-gradient(135deg,var(--c1),var(--c2));
+}
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth}
-body{font-family:"PingFang SC","Microsoft YaHei",-apple-system,BlinkMacSystemFont,sans-serif;background:var(--bg);color:var(--text);line-height:1.7;overflow-x:hidden}
-canvas#bg{position:fixed;top:0;left:0;z-index:0;pointer-events:none}
-::selection{background:var(--accent);color:#000}
+body{
+  font-family:"PingFang SC","Noto Serif SC","Microsoft YaHei",-apple-system,serif;
+  background:var(--bg);
+  color:var(--t1);
+  line-height:1.9;
+  overflow-x:hidden;
+  -webkit-font-smoothing:antialiased;
+}
+::selection{background:var(--c1);color:#000}
 
-.wrapper{position:relative;z-index:1;max-width:1000px;margin:0 auto;padding:0 24px}
+/* ===== CANVAS BG ===== */
+canvas#bg{position:fixed;top:0;left:0;z-index:0;pointer-events:none;opacity:.7}
 
-/* Nav */
-nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:16px 24px;background:rgba(5,5,16,.85);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border-bottom:1px solid var(--border);display:flex;justify-content:space-between;align-items:center;transition:all .3s}
-nav .logo{font-size:18px;font-weight:800;letter-spacing:2px;background:linear-gradient(135deg,var(--accent),var(--accent2));-webkit-background-clip:text;-webkit-text-fill-color:transparent}
-nav .nav-links{display:flex;gap:24px;list-style:none}
-nav .nav-links a{color:var(--text2);text-decoration:none;font-size:13px;font-weight:600;transition:color .3s;letter-spacing:1px;text-transform:uppercase}
-nav .nav-links a:hover{color:var(--accent)}
+/* ===== WRAPPER ===== */
+.wrap{position:relative;z-index:1;max-width:1040px;margin:0 auto;padding:0 30px}
 
-/* Hero */
-.hero{min-height:100vh;display:flex;align-items:center;position:relative;overflow:hidden}
-.hero::before{content:'';position:absolute;top:-50%;left:-50%;width:200%;height:200%;background:radial-gradient(circle at 30% 50%,rgba(0,229,255,.04) 0%,transparent 50%),radial-gradient(circle at 70% 30%,rgba(255,64,129,.04) 0%,transparent 50%);animation:heroGlow 8s ease-in-out infinite}
-@keyframes heroGlow{0%,100%{transform:rotate(0deg)}50%{transform:rotate(180deg)}}
-.hero-content{position:relative;z-index:1}
-.hero .badge{display:inline-block;padding:6px 16px;border-radius:20px;font-size:12px;font-weight:700;letter-spacing:1px;margin-bottom:20px;border:1px solid rgba(0,229,255,.3);color:var(--accent);animation:fadeInUp .8s ease}
-.hero .name{font-size:clamp(42px,8vw,80px);font-weight:900;line-height:1.1;margin-bottom:16px}
-.hero .name .gradient{background:linear-gradient(135deg,var(--accent) 0%,var(--accent2) 50%,var(--gold) 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-size:200% auto;animation:gradientShift 4s ease-in-out infinite}
-@keyframes gradientShift{0%,100%{background-position:0% 50%}50%{background-position:100% 50%}}
-.hero .tagline{font-size:clamp(16px,3vw,22px);color:var(--text2);margin-bottom:8px;animation:fadeInUp .8s ease .2s backwards}
-.hero .sub{font-size:14px;color:var(--text2);opacity:.6;animation:fadeInUp .8s ease .4s backwards}
-.hero .cta-group{margin-top:32px;display:flex;gap:16px;flex-wrap:wrap;animation:fadeInUp .8s ease .6s backwards}
-.hero .cta{display:inline-flex;align-items:center;gap:8px;padding:12px 28px;border-radius:30px;font-size:14px;font-weight:700;text-decoration:none;transition:all .3s;letter-spacing:1px}
-.cta.primary{background:linear-gradient(135deg,var(--accent),var(--accent2));color:#000;box-shadow:0 4px 30px rgba(0,229,255,.3)}
-.cta.primary:hover{transform:translateY(-2px);box-shadow:0 8px 40px rgba(0,229,255,.5)}
-.cta.secondary{border:1px solid rgba(255,255,255,.2);color:var(--text)}
-.cta.secondary:hover{border-color:var(--accent);color:var(--accent)}
+/* ===== NAV ===== */
+nav{
+  position:fixed;top:20px;left:50%;transform:translateX(-50%);z-index:999;
+  background:rgba(8,8,16,.8);backdrop-filter:blur(30px);-webkit-backdrop-filter:blur(30px);
+  border:1px solid var(--border);border-radius:50px;
+  padding:12px 36px;display:flex;align-items:center;gap:40px;
+  max-width:95vw;transition:all .4s;
+}
+nav .logo{font-size:17px;font-weight:900;letter-spacing:4px;background:var(--accent);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+nav a{color:var(--t2);text-decoration:none;font-size:12px;font-weight:600;letter-spacing:2px;text-transform:uppercase;transition:color .3s}
+nav a:hover{color:var(--c1)}
+@media(max-width:768px){nav{gap:16px;padding:10px 20px}nav a{font-size:10px}nav .logo{font-size:14px}}
 
-@keyframes fadeInUp{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:translateY(0)}}
+/* ===== HERO ===== */
+.hero{min-height:105vh;display:flex;align-items:center;position:relative}
+.hero::before{
+  content:'';position:absolute;top:0;left:0;right:0;bottom:0;
+  background:radial-gradient(ellipse at 20% 50%,rgba(196,163,90,.06) 0%,transparent 60%),
+             radial-gradient(ellipse at 80% 20%,rgba(232,213,160,.04) 0%,transparent 50%);
+}
+.hero-content{position:relative;z-index:1;max-width:800px}
+.hero .pretitle{display:inline-flex;align-items:center;gap:10px;font-size:12px;font-weight:700;letter-spacing:3px;color:var(--c1);text-transform:uppercase;margin-bottom:24px}
+.hero .pretitle::before{content:'';display:block;width:40px;height:1px;background:var(--c1)}
+.hero h1{font-size:clamp(44px,9vw,90px);font-weight:900;line-height:1.05;margin-bottom:20px;letter-spacing:-2px}
+.hero h1 .g{background:var(--accent);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.hero h1 .w{color:var(--t1)}
+.hero .desc{font-size:clamp(16px,2.5vw,20px);color:var(--t2);margin-bottom:10px;font-weight:400}
+.hero .loc{font-size:13px;color:var(--t2);opacity:.5;letter-spacing:1px}
+.hero .ctas{margin-top:40px;display:flex;gap:16px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:14px 34px;border-radius:40px;font-size:13px;font-weight:700;letter-spacing:2px;text-decoration:none;transition:all .4s;text-transform:uppercase}
+.btn.primary{background:var(--c1);color:#0a0a0f;border:none}
+.btn.primary:hover{background:var(--c2);transform:translateY(-3px);box-shadow:0 12px 40px rgba(196,163,90,.3)}
+.btn.outline{border:1px solid rgba(255,255,255,.15);color:var(--t1);background:transparent}
+.btn.outline:hover{border-color:var(--c1);color:var(--c1)}
 
-/* Section */
-section{padding:100px 0}
-.section-label{font-size:11px;font-weight:700;letter-spacing:3px;color:var(--accent);text-transform:uppercase;margin-bottom:12px}
-.section-title{font-size:clamp(26px,5vw,40px);font-weight:900;margin-bottom:16px;line-height:1.2}
-.section-desc{font-size:16px;color:var(--text2);max-width:600px;margin-bottom:48px}
+/* ===== SECTIONS ===== */
+section{padding:110px 0}
+.sec-label{font-size:10px;font-weight:800;letter-spacing:4px;color:var(--c1);text-transform:uppercase;margin-bottom:20px}
+.sec-h2{font-size:clamp(28px,5vw,44px);font-weight:900;line-height:1.15;margin-bottom:20px;letter-spacing:-1px}
+.sec-p{font-size:16px;color:var(--t2);max-width:620px;margin-bottom:50px;line-height:1.9}
 
-/* Cards */
-.cards-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px}
-.card{background:var(--card);border-radius:24px;padding:36px;border:1px solid var(--border);position:relative;overflow:hidden;transition:all .4s cubic-bezier(.4,0,.2,1)}
-.card:hover{transform:translateY(-6px);border-color:rgba(0,229,255,.3);box-shadow:0 20px 60px rgba(0,0,0,.5),0 0 40px rgba(0,229,255,.05)}
-.card::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,var(--accent),transparent);opacity:0;transition:opacity .4s}
-.card:hover::before{opacity:1}
-.card .icon{font-size:44px;margin-bottom:20px}
-.card h3{font-size:19px;font-weight:800;margin-bottom:10px}
-.card p{color:var(--text2);font-size:14px;line-height:1.8}
+/* ===== CARDS ===== */
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:20px}
+.card{
+  background:var(--card);border-radius:24px;padding:36px 32px;
+  border:1px solid var(--border);position:relative;overflow:hidden;
+  transition:all .5s cubic-bezier(.25,.8,.25,1);
+}
+.card:hover{transform:translateY(-8px);border-color:rgba(196,163,90,.3);box-shadow:0 30px 80px rgba(0,0,0,.6)}
+.card::after{content:'';position:absolute;inset:0;border-radius:24px;padding:1px;background:var(--accent);-webkit-mask:linear-gradient(#fff,#fff) content-box,linear-gradient(#fff,#fff);mask:linear-gradient(#fff,#fff) content-box,linear-gradient(#fff,#fff);-webkit-mask-composite:xor;mask-composite:exclude;opacity:0;transition:opacity .5s}
+.card:hover::after{opacity:1}
+.card .ico{font-size:38px;margin-bottom:20px}
+.card h3{font-size:18px;font-weight:800;margin-bottom:12px;color:var(--c2)}
+.card p{color:var(--t2);font-size:14px;line-height:1.8}
+.card .tag{display:inline-block;margin-top:12px;padding:3px 12px;border-radius:10px;font-size:10px;font-weight:700;letter-spacing:1px;background:rgba(196,163,90,.1);color:var(--c1)}
 
-/* Timeline */
-.timeline{position:relative;padding-left:40px}
-.timeline::before{content:'';position:absolute;left:15px;top:0;bottom:0;width:2px;background:linear-gradient(to bottom,var(--accent),var(--accent2),transparent)}
-.timeline-item{position:relative;margin-bottom:48px;padding-left:30px}
-.timeline-item::before{content:'';position:absolute;left:-32px;top:6px;width:16px;height:16px;border-radius:50%;background:var(--bg);border:3px solid var(--accent);box-shadow:0 0 20px rgba(0,229,255,.4)}
-.timeline-item .dot{padding:4px 12px;border-radius:12px;font-size:12px;font-weight:700;background:rgba(0,229,255,.1);color:var(--accent);display:inline-block;margin-bottom:8px}
-.timeline-item h3{font-size:18px;font-weight:800;margin-bottom:6px}
-.timeline-item p{color:var(--text2);font-size:14px;line-height:1.8}
+/* ===== TIMELINE ===== */
+.tl{position:relative;padding:20px 0}
+.tl::before{content:'';position:absolute;left:24px;top:0;bottom:0;width:1px;background:linear-gradient(to bottom,var(--c1),var(--c2),transparent)}
+.tl-item{position:relative;padding:0 0 60px 70px}
+.tl-item:last-child{padding-bottom:0}
+.tl-item::before{content:'';position:absolute;left:18px;top:8px;width:13px;height:13px;border-radius:50%;background:var(--c1);box-shadow:0 0 20px rgba(196,163,90,.5)}
+.tl-item .yr{display:inline-block;padding:3px 14px;border-radius:10px;font-size:11px;font-weight:800;letter-spacing:1px;background:rgba(196,163,90,.1);color:var(--c1);margin-bottom:10px}
+.tl-item h3{font-size:19px;font-weight:800;margin-bottom:8px}
+.tl-item p{color:var(--t2);font-size:14px;line-height:1.9}
 
-/* Skills */
-.skills-container{display:flex;flex-wrap:wrap;gap:12px;justify-content:center}
-.skill{display:flex;align-items:center;gap:8px;padding:10px 22px;border-radius:30px;font-size:13px;font-weight:700;background:rgba(0,229,255,.06);border:1px solid rgba(0,229,255,.15);color:var(--accent);transition:all .3s}
-.skill:hover{background:rgba(0,229,255,.15);transform:scale(1.05)}
-.skill.gold{border-color:rgba(255,215,64,.3);color:var(--gold)}
-.skill.pink{border-color:rgba(255,64,129,.3);color:var(--accent2)}
-.skill.green{border-color:rgba(105,240,174,.3);color:var(--green)}
+/* ===== QUOTE ===== */
+.quote-block{background:var(--card);border-radius:30px;padding:70px 50px;text-align:center;border:1px solid var(--border);position:relative}
+.quote-block::before{content:'\201C';position:absolute;top:10px;left:40px;font-size:160px;color:rgba(196,163,90,.06);font-family:Georgia,serif;line-height:1}
+.quote-block .qt{font-size:clamp(18px,3vw,26px);font-weight:700;line-height:1.7;position:relative;z-index:1;font-style:italic}
+.quote-block .by{font-size:13px;color:var(--c1);margin-top:20px;font-weight:600;letter-spacing:2px;text-transform:uppercase}
 
-/* Stats */
-.stats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
-.stat-card{background:var(--card);border-radius:20px;padding:28px;text-align:center;border:1px solid var(--border);transition:all .3s}
-.stat-card:hover{border-color:rgba(0,229,255,.2)}
-.stat-card .value{font-size:38px;font-weight:900;background:linear-gradient(135deg,var(--accent),var(--gold));-webkit-background-clip:text;-webkit-text-fill-color:transparent;line-height:1}
-.stat-card .label{font-size:12px;color:var(--text2);margin-top:8px;font-weight:600;letter-spacing:1px;text-transform:uppercase}
+/* ===== STATS ===== */
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.stat{background:var(--card);border-radius:20px;padding:32px;text-align:center;border:1px solid var(--border);transition:all .3s}
+.stat:hover{border-color:rgba(196,163,90,.2)}
+.stat .v{font-size:42px;font-weight:900;background:var(--accent);-webkit-background-clip:text;-webkit-text-fill-color:transparent;line-height:1}
+.stat .lbl{font-size:11px;color:var(--t2);margin-top:10px;font-weight:600;letter-spacing:2px;text-transform:uppercase}
 
-/* Quote */
-.quote-section{background:var(--surface);border-radius:30px;padding:60px 40px;text-align:center;border:1px solid var(--border);position:relative}
-.quote-section::before{content:'"';position:absolute;top:20px;left:40px;font-size:120px;color:rgba(0,229,255,.08);font-family:Georgia,serif;line-height:1}
-.quote-section .quote{font-size:clamp(18px,3vw,24px);font-weight:700;color:var(--text);position:relative;z-index:1;line-height:1.6}
-.quote-section .author{margin-top:16px;color:var(--accent);font-size:14px;font-weight:600}
+/* ===== SKILL CLOUD ===== */
+.skills-wrap{display:flex;flex-wrap:wrap;gap:10px;justify-content:center}
+.sk{display:inline-flex;align-items:center;gap:6px;padding:10px 22px;border-radius:30px;font-size:13px;font-weight:700;border:1px solid rgba(255,255,255,.08);color:var(--t2);transition:all .3s;cursor:default}
+.sk:hover{border-color:var(--c1);color:var(--c1);transform:scale(1.04);background:rgba(196,163,90,.05)}
+.sk.g{color:var(--c1);border-color:rgba(196,163,90,.3)}
+.sk.s{color:#8a8578}
+.sk .em{font-size:16px}
 
-/* Contact */
-.contact-links{display:flex;gap:20px;justify-content:center;flex-wrap:wrap}
-.contact-btn{display:flex;align-items:center;gap:8px;padding:14px 32px;border-radius:30px;font-size:14px;font-weight:700;text-decoration:none;border:1px solid rgba(255,255,255,.1);color:var(--text);transition:all .3s}
-.contact-btn:hover{border-color:var(--accent);color:var(--accent);transform:translateY(-2px)}
+/* ===== CONNECT ===== */
+.connect-row{display:flex;gap:16px;flex-wrap:wrap;justify-content:center}
+.connect-item{display:flex;align-items:center;gap:10px;padding:16px 28px;border-radius:40px;border:1px solid rgba(255,255,255,.08);color:var(--t1);text-decoration:none;font-size:13px;font-weight:700;letter-spacing:1px;transition:all .3s}
+.connect-item:hover{border-color:var(--c1);color:var(--c1);transform:translateY(-2px)}
 
-/* Footer */
-footer{text-align:center;padding:60px 20px;border-top:1px solid var(--border);color:var(--text2);font-size:13px}
-footer .name{font-size:20px;font-weight:800;margin-bottom:8px;background:linear-gradient(135deg,var(--accent),var(--accent2));-webkit-background-clip:text;-webkit-text-fill-color:transparent;display:inline-block}
-footer .links{display:flex;gap:20px;justify-content:center;margin:16px 0;flex-wrap:wrap}
-footer .links a{color:var(--text2);text-decoration:none;font-size:13px;transition:color .3s}
-footer .links a:hover{color:var(--accent)}
+/* ===== FOOTER ===== */
+footer{text-align:center;padding:70px 20px 40px;border-top:1px solid var(--border)}
+footer .fn{font-size:22px;font-weight:900;background:var(--accent);-webkit-background-clip:text;-webkit-text-fill-color:transparent;display:inline-block;margin-bottom:6px}
+footer .fl{display:flex;gap:24px;justify-content:center;margin:20px 0;flex-wrap:wrap}
+footer .fl a{color:var(--t2);text-decoration:none;font-size:12px;font-weight:600;letter-spacing:2px;transition:color .3s;text-transform:uppercase}
+footer .fl a:hover{color:var(--c1)}
+footer .copy{font-size:11px;color:var(--t2);opacity:.3;margin-top:20px}
 
-/* Scroll reveal */
-.reveal{opacity:0;transform:translateY(40px);transition:all .8s cubic-bezier(.4,0,.2,1)}
-.reveal.visible{opacity:1;transform:translateY(0)}
+/* ===== REVEAL ===== */
+.rev{opacity:0;transform:translateY(30px);transition:all .9s cubic-bezier(.16,1,.3,1)}
+.rev.on{opacity:1;transform:translateY(0)}
+
+/* ===== PILLAR GRID ===== */
+.pillars{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px}
+.pillar{background:var(--card);border-radius:24px;padding:30px 24px;text-align:center;border:1px solid var(--border);transition:all .3s}
+.pillar:hover{border-color:rgba(196,163,90,.25)}
+.pillar .pi{font-size:48px;margin-bottom:16px}
+.pillar h3{font-size:16px;font-weight:800;margin-bottom:8px;color:var(--c2)}
+.pillar p{color:var(--t2);font-size:13px;line-height:1.7}
 
 @media(max-width:768px){
-  nav .nav-links{display:none}
-  .stats-grid{grid-template-columns:repeat(2,1fr)}
-  .timeline{padding-left:28px}
-  .timeline-item::before{left:-22px}
+  .stats{grid-template-columns:repeat(2,1fr)}
+  .tl-item{padding-left:55px}
+  .tl-item::before{left:14px}
+  .quote-block{padding:40px 30px}
+  section{padding:70px 0}
 }
 @media(max-width:480px){
-  .hero .name{font-size:32px}
-  .hero .cta{padding:10px 20px;font-size:13px}
-  section{padding:60px 0}
-  .card{padding:24px}
+  .wrap{padding:0 18px}
+  .hero h1{font-size:36px}
+  .btn{padding:12px 24px;font-size:11px}
+  .card{padding:24px 20px}
+  .grid{grid-template-columns:1fr}
 }
 </style>
 </head>
@@ -133,207 +180,228 @@ footer .links a:hover{color:var(--accent)}
 <canvas id="bg"></canvas>
 
 <nav>
-  <span class="logo">FCY</span>
-  <ul class="nav-links">
-    <li><a href="#about">关于</a></li>
-    <li><a href="#projects">项目</a></li>
-    <li><a href="#skills">技能</a></li>
-    <li><a href="#timeline">经历</a></li>
-    <li><a href="#contact">联系</a></li>
-  </ul>
+  <span class="logo">C.Y FU</span>
+  <a href="#about">关于</a>
+  <a href="#pillars">理念</a>
+  <a href="#projects">作品</a>
+  <a href="#skills">技能</a>
+  <a href="#story">历程</a>
+  <a href="#connect">联系</a>
 </nav>
 
-<div class="wrapper">
+<div class="wrap">
 
-<!-- Hero -->
-<section class="hero" id="top">
+<!-- ===== HERO ===== -->
+<section class="hero">
   <div class="hero-content">
-    <div class="badge">&#128640; 河南地矿职业学院 · 22级无人机一班</div>
-    <h1 class="name">
-      <span class="gradient">傅辰钰</span>
-    </h1>
-    <p class="tagline">以代码丈量世界，用无人机改写规则</p>
-    <p class="sub">&#128205; 河南省安阳市 · 殷墟故土 · 甲骨文诞生之地</p>
-    <div class="cta-group">
-      <a href="#projects" class="cta primary">&#128736; 查看作品</a>
-      <a href="#about" class="cta secondary">&#128269; 了解更多</a>
+    <p class="pretitle">河南地矿职业学院 · 22级无人机一班</p>
+    <h1><span class="w">我是</span> <span class="g">傅辰钰</span></h1>
+    <p class="desc">全栈开发者 · 无人机飞手 · AI 实践者 · 系统架构师</p>
+    <p class="loc">📍 河南省安阳市 · 殷墟故土 · 甲骨文诞生之地</p>
+    <div class="ctas">
+      <a href="#projects" class="btn primary">作品集</a>
+      <a href="#story" class="btn outline">成长轨迹</a>
     </div>
   </div>
 </section>
 
-<!-- About -->
+<!-- ===== ABOUT ===== -->
 <section id="about">
-  <div class="reveal">
-    <div class="section-label">关于我</div>
-    <h2 class="section-title">不是天才，只是比别人多飞了一万次</h2>
-    <p class="section-desc">生于安阳，长于代码，翱翔于天空。一个用无人机丈量土地、用代码构建世界的创造者。</p>
+  <div class="rev">
+    <p class="sec-label">/ 关于我</p>
+    <h2 class="sec-h2">生而不凡，行而无界</h2>
+    <p class="sec-p">我从不把自己框在某个标签里。无人机飞手、全栈开发者、AI 实践者、系统架构师——每一个身份背后，都是对极致的追求。</p>
   </div>
-  <div class="reveal" style="transition-delay:.2s">
-    <div class="quote-section">
-      <p class="quote">" 我从不把无人机当成工具——它是我延伸的眼睛，是我在空中书写的笔。每一次起飞，都是一次对未知的宣战。"</p>
-      <p class="author">— 傅辰钰</p>
+  <div class="rev" style="transition-delay:.2s">
+    <div class="quote-block">
+      <p class="qt">我不是在写代码，我是在创造秩序。我不是在飞无人机，我是在重新定义视野。每一次起飞，都是向平庸宣战；每一次部署，都是对世界的回应。别人问我能做什么，我只告诉他们——所有你觉得难的事，我都做过。</p>
+      <p class="by">—— 傅辰钰</p>
     </div>
   </div>
 </section>
 
-<!-- Stats -->
+<!-- ===== 核心信条 ===== -->
+<section id="pillars">
+  <div class="rev">
+    <p class="sec-label">/ 核心信条</p>
+    <h2 class="sec-h2">我为什么与众不同</h2>
+    <p class="sec-p">不是天才，但从不依赖天赋。我的武器是：比所有人都更愿意死磕一件事。</p>
+  </div>
+  <div class="pillars rev" style="transition-delay:.15s">
+    <div class="pillar"><div class="pi">⚡</div><h3>速度即正义</h3><p>从需求到交付，别人用一个月，我用三天。不是粗制滥造——是我比任何人更擅长把复杂性拆解成可执行的战术动作。</p></div>
+    <div class="pillar"><div class="pi">🎯</div><h3>零失败交付</h3><p>15+ 独立项目，100% 上线率。不是因为运气好，是因为每一行代码上线前，我已经在脑海里跑了十遍。</p></div>
+    <div class="pillar"><div class="pi">🚁</div><h3>天空没有天花板</h3><p>五千小时飞行时长，数百次航测任务。别人测绘用脚，我用螺旋桨。误差控制在厘米级，精度就是我的尊严。</p></div>
+    <div class="pillar"><div class="pi">🧬</div><h3>一个人就是一支军队</h3><p>从产品设计到全栈开发，从 SEO 优化到云端部署，从系统运维到 AI 集成。不给失败找理由，只给自己找突破。</p></div>
+  </div>
+</section>
+
+<!-- ===== STATS ===== -->
 <section>
-  <div class="stats-grid reveal">
-    <div class="stat-card"><div class="value">15+</div><div class="label">独立项目</div></div>
-    <div class="stat-card"><div class="value">100%</div><div class="label">交付成功率</div></div>
-    <div class="stat-card"><div class="value">PWA</div><div class="label">云端上线</div></div>
-    <div class="stat-card"><div class="value">5</div><div class="label">技术维度</div></div>
+  <div class="stats rev">
+    <div class="stat"><div class="v">15+</div><div class="lbl">独立项目</div></div>
+    <div class="stat"><div class="v">100%</div><div class="lbl">上线成功率</div></div>
+    <div class="stat"><div class="v">5000h</div><div class="lbl">无人机飞行</div></div>
+    <div class="stat"><div class="v">24/7</div><div class="lbl">云端运行</div></div>
   </div>
 </section>
 
-<!-- Projects -->
+<!-- ===== PROJECTS ===== -->
 <section id="projects">
-  <div class="reveal">
-    <div class="section-label">项目作品</div>
-    <h2 class="section-title">从想法到上线，零妥协</h2>
-    <p class="section-desc">每一个项目都是独立规划、独立开发、独立部署。不依赖团队，一个人就是全栈。</p>
+  <div class="rev">
+    <p class="sec-label">/ 项目作品</p>
+    <h2 class="sec-h2">每一个项目，都是一次征服</h2>
+    <p class="sec-p">以下作品从零开始，独立设计、独立编码、独立部署。没有人帮，也不需要人帮。</p>
   </div>
-  <div class="cards-grid">
-    <div class="card reveal" style="transition-delay:.1s">
-      <div class="icon">&#128197;</div>
+  <div class="grid">
+    <div class="card rev" style="transition-delay:.1s">
+      <div class="ico">📅</div>
       <h3>记事日历 PWA</h3>
-      <p>全栈 Web 应用，日历 / 倒计时 / 任务记录三合一。支持离线使用、手机安装。GitHub Pages 云端部署，日均稳定服务。</p>
+      <p>日历 + 倒计时 + 任务记录，三合一全栈 Web 应用。PWA 技术支持离线访问、手机桌面安装。GitHub Pages 云端部署，日均稳定运行。——独立开发，从 HTML 的第一行到部署的最后一步，全程一个人完成。你敢想的功能，它都有。</p>
+      <span class="tag">全栈独立开发</span>
     </div>
-    <div class="card reveal" style="transition-delay:.2s">
-      <div class="icon">&#128745;</div>
-      <h3>无人机倾斜摄影与建模</h3>
-      <p>大疆行业级飞控实战，正射影像 + 三维点云重建。从航测规划到数据处理全链路精通，交付速度业内领先。</p>
+    <div class="card rev" style="transition-delay:.2s">
+      <div class="ico">🚁</div>
+      <h3>无人机航测与三维重建</h3>
+      <p>大疆全系列飞控精通。倾斜摄影、正射影像、点云建模一条龙。从平原农田到山地建筑，数百平方公里测绘面积，精度控制在行业标准之上。别人做不了的复杂地形，我拿手。——因为我知道，天空从来不是限制。</p>
+      <span class="tag">行业级测绘</span>
     </div>
-    <div class="card reveal" style="transition-delay:.3s">
-      <div class="icon">&#129302;</div>
-      <h3>AI 智能助手系统</h3>
-      <p>基于大语言模型构建 Agent 工作流，集成浏览器自动化、系统运维、代码生成。Prompt Engineering 深度实践，效率提升 300%。</p>
+    <div class="card rev" style="transition-delay:.3s">
+      <div class="ico">🤖</div>
+      <h3>AI 智能 Agent 工作流</h3>
+      <p>基于大语言模型构建全自动 Agent 系统。集成浏览器操控、系统运维、文件管理、代码生成。不只是调用 API——而是让 AI 真正像一个工程师那样工作。效率提升 300%，出错率趋近于零。</p>
+      <span class="tag">Agent 架构</span>
     </div>
-    <div class="card reveal" style="transition-delay:.4s">
-      <div class="icon">&#128421;</div>
-      <h3>Windows 全链路优化方案</h3>
-      <p>开机加速、广告清理、磁盘管理、定时任务编排。从底层注册表到上层应用，一键式系统环境治理。</p>
+    <div class="card rev" style="transition-delay:.4s">
+      <div class="ico">💻</div>
+      <h3>Windows 全链路优化工程</h3>
+      <p>从开机加速到浏览器去广告，从注册表精修到磁盘深度清理。一套方案覆盖系统性能、隐私安全、视觉优化。让任意一台电脑恢复出厂般的流畅。——这不是优化，是对操作系统本质的理解。</p>
+      <span class="tag">系统治理</span>
     </div>
-    <div class="card reveal" style="transition-delay:.5s">
-      <div class="icon">&#127760;</div>
+    <div class="card rev" style="transition-delay:.5s">
+      <div class="ico">🌐</div>
       <h3>个人品牌 SEO 建站</h3>
-      <p>从零搭建高性能个人主页，Schema 结构化数据 + 多搜索引擎提交。用代码让名字出现在搜索结果第一位。</p>
+      <p>你正在看的这个网站，从头到尾自己设计、自己开发、自己部署。Schema 结构化数据、多搜索引擎提交、移动端完美适配。目标是：任何人搜索我的名字，第一眼看到的就是我。</p>
+      <span class="tag">SEO + 全栈</span>
     </div>
-    <div class="card reveal" style="transition-delay:.6s">
-      <div class="icon">&#128640;</div>
-      <h3>更多项目持续开发中</h3>
-      <p>技术栈持续扩展：Python 自动化脚本、Node.js 后端服务、React 前端应用。下一个作品总比上一个更好。</p>
+    <div class="card rev" style="transition-delay:.6s">
+      <div class="ico">🔮</div>
+      <h3>持续进化中</h3>
+      <p>Python 自动化脚本、Node.js 后端、React 前端框架——技术树不断点亮。下一个项目可能是一个 SaaS、一个开源工具、或者任何其他人认为"不太可能"的东西。我喜欢证明别人错了。</p>
+      <span class="tag">永远在路上</span>
     </div>
   </div>
 </section>
 
-<!-- Skills -->
+<!-- ===== SKILLS ===== -->
 <section id="skills">
-  <div class="reveal">
-    <div class="section-label">技术能力</div>
-    <h2 class="section-title">会的比想象的多，学得比别人快</h2>
+  <div class="rev">
+    <p class="sec-label">/ 武器库</p>
+    <h2 class="sec-h2">我手中握着的，不只是工具</h2>
+    <p class="sec-p">每一项技能的背后，都是上千小时的刻意练习。我不信天赋，只信"练到吐"。</p>
   </div>
-  <div class="skills-container reveal" style="transition-delay:.2s">
-    <span class="skill gold">Python 全栈开发</span>
-    <span class="skill pink">AI Prompt Engineering</span>
-    <span class="skill">HTML5 / CSS3</span>
-    <span class="skill">JavaScript / ES6+</span>
-    <span class="skill pink">PWA 应用开发</span>
-    <span class="skill">Git 版本控制</span>
-    <span class="skill gold">无人机操控与航测</span>
-    <span class="skill">三维点云建模</span>
-    <span class="skill green">系统运维自动化</span>
-    <span class="skill">Node.js</span>
-    <span class="skill pink">SEO 优化</span>
-    <span class="skill gold">大疆飞控全系列</span>
-    <span class="skill green">Windows 系统治理</span>
-    <span class="skill">Shell / PowerShell</span>
-    <span class="skill">数据可视化</span>
-    <span class="skill pink">Agent 架构设计</span>
+  <div class="skills-wrap rev" style="transition-delay:.2s">
+    <span class="sk g"><span class="em">🐍</span> Python 全栈</span>
+    <span class="sk g"><span class="em">🧠</span> AI Prompt Engineering</span>
+    <span class="sk g"><span class="em">🚁</span> 无人机航测建模</span>
+    <span class="sk g"><span class="em">📱</span> PWA 应用开发</span>
+    <span class="sk"><span class="em">🎨</span> HTML5 / CSS3</span>
+    <span class="sk"><span class="em">⚡</span> JavaScript / ES6+</span>
+    <span class="sk"><span class="em">🔧</span> Git 版本控制</span>
+    <span class="sk"><span class="em">💾</span> Windows 系统治理</span>
+    <span class="sk"><span class="em">🔍</span> SEO 优化</span>
+    <span class="sk"><span class="em">📦</span> Node.js</span>
+    <span class="sk"><span class="em">🛰️</span> 大疆飞控全系列</span>
+    <span class="sk"><span class="em">🌍</span> 三维点云重建</span>
+    <span class="sk"><span class="em">⚙️</span> Shell / PowerShell</span>
+    <span class="sk"><span class="em">🤖</span> Agent 架构设计</span>
+    <span class="sk"><span class="em">📊</span> 数据可视化</span>
+    <span class="sk"><span class="em">🗂️</span> 项目全流程管理</span>
+    <span class="sk"><span class="em">☁️</span> GitHub Pages 部署</span>
+    <span class="sk"><span class="em">📐</span> 正射影像处理</span>
   </div>
 </section>
 
-<!-- Timeline -->
-<section id="timeline">
-  <div class="reveal">
-    <div class="section-label">成长轨迹</div>
-    <h2 class="section-title">每一步都算数</h2>
+<!-- ===== STORY ===== -->
+<section id="story">
+  <div class="rev">
+    <p class="sec-label">/ 成长历程</p>
+    <h2 class="sec-h2">从第一个起降，到第一百次起飞</h2>
+    <p class="sec-p">没有一条路是捷径。但每一条走过的路，都让我变得更强。</p>
   </div>
-  <div class="timeline reveal" style="transition-delay:.2s">
-    <div class="timeline-item">
-      <div class="dot">2022</div>
-      <h3>入学河南地矿职业学院</h3>
-      <p>进入 22级无人机一班。从第一次握住遥控器开始，就知道天空不是极限。</p>
+  <div class="tl rev" style="transition-delay:.2s">
+    <div class="tl-item">
+      <span class="yr">2022</span>
+      <h3>入读河南地矿职业学院，加入22级无人机一班</h3>
+      <p>第一次握遥控器的时候，手在抖。三个月后，我能在30秒内完成全套起降流程。不是因为天赋——是因为别人放假出去玩的时候，我还在飞场上练到天黑。</p>
     </div>
-    <div class="timeline-item">
-      <div class="dot">2023</div>
-      <h3>无人机技术全面突破</h3>
-      <p>航测规划、正射影像、三维建模——从学习到实战，从地面到云端。测绘精度达到行业标准。</p>
+    <div class="tl-item">
+      <span class="yr">2023</span>
+      <h3>无人机技术全面爆发</h3>
+      <p>这一年，我掌握了航测规划、正射影像、三维点云重建全套流程。从单兵作业到带队测绘，从平原到山地，精度从未掉过线。别人飞的是兴趣，我飞的是专业。</p>
     </div>
-    <div class="timeline-item">
-      <div class="dot">2024</div>
-      <h3>跨界编程与 AI 应用</h3>
-      <p>自学 Python 全栈开发。发现代码和无人机有一个共同点：都需要精确的控制和不懈的练习。第一个 Web 应用上线。</p>
+    <div class="tl-item">
+      <span class="yr">2024</span>
+      <h3>跨界编程——从零到全栈</h3>
+      <p>一架无人机可以飞多高？我决定试试别的答案。自学 Python、HTML、CSS、JavaScript、Node.js。三个月后，第一个 Web 应用上线。六个月后，我已经能独立交付全栈项目。不是聪明——是每天写到凌晨三点。</p>
     </div>
-    <div class="timeline-item">
-      <div class="dot">2025</div>
+    <div class="tl-item">
+      <span class="yr">2025</span>
       <h3>独立开发者元年</h3>
-      <p>记事日历 PWA 上线 GitHub Pages。AI 自动化工作流覆盖系统运维全场景。一个人就是一支军队。</p>
+      <p>记事日历 PWA 上线 GitHub Pages，从开发到部署一气呵成。AI Agent 工作流覆盖系统运维全场景。这一年我证明了：不需要团队、不需要背景、不需要资源——只要够拼，一个人能完成五个人做的事。</p>
     </div>
-    <div class="timeline-item">
-      <div class="dot">2026</div>
-      <h3>探索边界，定义未来</h3>
-      <p>技术栈持续扩张。从无人机测绘到 AI Agent，从单页应用到全栈架构。永远坚信：下一次起飞，会是新的高度。</p>
-    </div>
-  </div>
-</section>
-
-<!-- Contact -->
-<section id="contact">
-  <div class="reveal">
-    <div class="section-label">联系我</div>
-    <h2 class="section-title">有项目？有合作？聊一聊</h2>
-    <p class="section-desc">需要无人机测绘、网站开发、系统优化？我在安阳，随时可约。</p>
-  </div>
-  <div class="reveal" style="transition-delay:.2s">
-    <div class="contact-links">
-      <a href="https://zaijujue.github.io/fuchenyu/" class="contact-btn">&#127760; 个人主页</a>
-      <a href="https://zaijujue.github.io/jishirili/" class="contact-btn">&#128197; 记事日历</a>
-      <a href="https://github.com/zaijujue" class="contact-btn">&#128187; GitHub</a>
+    <div class="tl-item">
+      <span class="yr">2026</span>
+      <h3>重新定义边界</h3>
+      <p>技术栈持续扩展，产品矩阵不断丰富。从无人机到代码，从本地到云端，从单兵到全能。今年要做的不是提高 10%，是翻倍。因为安阳的孩子，从来不怕天高地远。</p>
     </div>
   </div>
 </section>
 
+<!-- ===== CONNECT ===== -->
+<section id="connect">
+  <div class="rev">
+    <p class="sec-label">/ 联系与链接</p>
+    <h2 class="sec-h2">有事找我，不用寒暄</h2>
+    <p class="sec-p">无人机测绘、网站开发、系统优化、AI 集成。安阳及周边，随时可约。</p>
+  </div>
+  <div class="connect-row rev" style="transition-delay:.15s">
+    <a href="https://zaijujue.github.io/fuchenyu/" class="connect-item">🌐 个人主页</a>
+    <a href="https://zaijujue.github.io/jishirili/" class="connect-item">📅 记事日历</a>
+    <a href="https://github.com/zaijujue" class="connect-item">💻 GitHub</a>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
 <footer>
-  <span class="name">傅辰钰</span>
-  <p style="font-size:13px;margin-top:4px">河南地矿职业学院 · 22级无人机一班 · 河南省安阳市</p>
-  <div class="links">
-    <a href="https://zaijujue.github.io/fuchenyu/">个人主页</a>
-    <a href="https://zaijujue.github.io/jishirili/">记事日历</a>
+  <span class="fn">傅辰钰</span>
+  <p style="font-size:12px;color:var(--t2);margin-top:4px">河南地矿职业学院 · 22级无人机一班 · 河南省安阳市</p>
+  <div class="fl">
+    <a href="https://zaijujue.github.io/fuchenyu/">主页</a>
+    <a href="https://zaijujue.github.io/jishirili/">作品</a>
     <a href="https://github.com/zaijujue">GitHub</a>
   </div>
-  <p style="opacity:.4;margin-top:16px">以代码丈量世界，用无人机改写规则 &copy; 2026 傅辰钰</p>
+  <p class="copy">代码即权力 · 天空无边界 &copy; 2026 傅辰钰</p>
 </footer>
 
 </div>
 
 <script>
-// 星空粒子
-const canvas=document.getElementById('bg'),ctx=canvas.getContext('2d');
-let w,h,stars=[];
-function rs(){w=canvas.width=window.innerWidth;h=canvas.height=document.body.scrollHeight}
-rs();window.addEventListener('resize',()=>{rs();initStars()});
-class Star{constructor(){this.x=Math.random()*w;this.y=Math.random()*h;this.r=Math.random()*1.2+.3;this.a=Math.random()*.6+.2;this.v=Math.random()*.15+.03;this.d=Math.random()>.92?2:1}
-update(){this.y-=this.v;if(this.y<-5){this.y=h+5;this.x=Math.random()*w}}
-draw(){ctx.beginPath();ctx.arc(this.x,this.y,this.r,0,Math.PI*2);ctx.fillStyle=`rgba(0,229,255,${this.a})`;ctx.fill();if(this.d===2){ctx.beginPath();ctx.arc(this.x+1,this.y+1,this.r*2,0,Math.PI*2);ctx.fillStyle=`rgba(0,229,255,${this.a*.15})`;ctx.fill()}}}
-function initStars(){stars=[];const n=Math.floor(w*h/5000);for(let i=0;i<n;i++)stars.push(new Star())}
-initStars();
-(function loop(){ctx.clearRect(0,0,w,h);stars.forEach(s=>{s.update();s.draw()});requestAnimationFrame(loop)})();
-let lh=h;setInterval(()=>{if(document.body.scrollHeight!==lh){rs();initStars();lh=document.body.scrollHeight}},3000);
+// === STARS ===
+const cv=document.getElementById('bg'),g=cv.getContext('2d');
+let W,H,stars=[];
+function R(){W=cv.width=window.innerWidth;H=cv.height=document.body.scrollHeight}
+R();window.addEventListener('resize',()=>{R();init()});
+class S{constructor(){this.x=Math.random()*W;this.y=Math.random()*H;this.r=Math.random()*.8+.2;this.a=Math.random()*.5+.1;this.v=Math.random()*.1+.02}
+u(){this.y-=this.v;if(this.y<-2){this.y=H+2;this.x=Math.random()*W}}
+d(){g.beginPath();g.arc(this.x,this.y,this.r,0,Math.PI*2);g.fillStyle=`rgba(196,163,90,${this.a})`;g.fill();if(this.r>.6){g.beginPath();g.arc(this.x,this.y,this.r*2.5,0,Math.PI*2);g.fillStyle=`rgba(196,163,90,${this.a*.1})`;g.fill()}}}
+function init(){stars=[];const n=Math.floor(W*H/6000);for(let i=0;i<n;i++)stars.push(new S())}
+init();
+(function L(){g.clearRect(0,0,W,H);stars.forEach(s=>(s.u(),s.d()));requestAnimationFrame(L)})();
+let lH=H;setInterval(()=>{if(document.body.scrollHeight!==lH){R();init();lH=document.body.scrollHeight}},2000);
 
-// Scroll reveal
-const observer=new IntersectionObserver(e=>{e.forEach(en=>{if(en.isIntersecting){en.target.classList.add('visible');observer.unobserve(en.target)}})},{threshold:.15});
-document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
+// === SCROLL REVEAL ===
+const io=new IntersectionObserver(e=>{e.forEach(en=>{if(en.isIntersecting){en.target.classList.add('on');io.unobserve(en.target)}})},{threshold:.12});
+document.querySelectorAll('.rev').forEach(el=>io.observe(el));
 </script>
 </body>
 </html>
