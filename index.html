@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>傅辰钰 | 河南地矿职业学院 — 个人主页</title>
+<meta name="description" content="傅辰钰，河南地矿职业学院22级无人机一班学生，全栈开发者，Python / Web开发 / AI应用，个人作品展示。">
+<meta name="keywords" content="傅辰钰,河南地矿职业学院,无人机,22级无人机一班,个人主页">
+<meta property="og:title" content="傅辰钰 — 以代码丈量世界">
+<meta property="og:description" content="河南地矿职业学院22级无人机一班 · 开发者 · 创造者">
+<meta name="theme-color" content="#1a1a2e">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--bg:#0a0a1a;--card:#111133;--accent:#00d4ff;--accent2:#ff6b9d;--gold:#f0c060;--text:#e8e8f0;--text2:#8888aa}
+body{font-family:"PingFang SC","Microsoft YaHei",-apple-system,sans-serif;background:var(--bg);color:var(--text);line-height:1.8}
+canvas#bg{position:fixed;top:0;left:0;z-index:0}
+.container{position:relative;z-index:1;max-width:900px;margin:0 auto;padding:0 20px}
+
+/* Hero */
+.hero{min-height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:40px 20px}
+.hero .avatar{width:140px;height:140px;border-radius:50%;background:linear-gradient(135deg,var(--accent),var(--accent2));display:flex;align-items:center;justify-content:center;font-size:60px;margin-bottom:24px;box-shadow:0 0 60px rgba(0,212,255,.3);animation:float 3s ease-in-out infinite}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+.hero h1{font-size:clamp(32px,6vw,56px);font-weight:900;background:linear-gradient(135deg,var(--accent),var(--accent2),var(--gold));-webkit-background-clip:text;-webkit-text-fill-color:transparent;margin-bottom:12px}
+.hero .subtitle{font-size:18px;color:var(--text2);margin-bottom:8px}
+.hero .location{font-size:15px;color:var(--text2);opacity:.7}
+
+/* Sections */
+section{padding:80px 0}
+.section-title{font-size:28px;font-weight:800;margin-bottom:40px;text-align:center}
+.section-title span{background:linear-gradient(135deg,var(--accent),var(--accent2));-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+
+/* Cards */
+.card{background:var(--card);border-radius:20px;padding:32px;margin-bottom:24px;border:1px solid rgba(255,255,255,.05);transition:transform .3s,box-shadow .3s}
+.card:hover{transform:translateY(-4px);box-shadow:0 20px 60px rgba(0,0,0,.4)}
+.card .icon{font-size:40px;margin-bottom:16px}
+.card h3{font-size:20px;margin-bottom:12px;color:var(--accent)}
+.card p{color:var(--text2);font-size:15px}
+
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px}
+
+/* Timeline */
+.timeline{position:relative;padding-left:30px;border-left:2px solid rgba(0,212,255,.3)}
+.timeline-item{margin-bottom:40px;position:relative}
+.timeline-item::before{content:'';position:absolute;left:-38px;top:4px;width:14px;height:14px;border-radius:50%;background:var(--accent);box-shadow:0 0 20px rgba(0,212,255,.5)}
+.timeline-item .year{font-size:14px;color:var(--accent);font-weight:700}
+.timeline-item h3{font-size:18px;margin:4px 0}
+.timeline-item p{color:var(--text2);font-size:14px}
+
+/* Skills */
+.skill-tags{display:flex;flex-wrap:wrap;gap:10px;justify-content:center}
+.skill-tag{padding:8px 20px;border-radius:30px;font-size:14px;font-weight:600;background:rgba(0,212,255,.1);border:1px solid rgba(0,212,255,.2);color:var(--accent)}
+.skill-tag.hot{background:rgba(255,107,157,.1);border-color:rgba(255,107,157,.2);color:var(--accent2)}
+
+/* Stats */
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:20px;text-align:center}
+.stat{background:var(--card);border-radius:20px;padding:24px;border:1px solid rgba(255,255,255,.05)}
+.stat .num{font-size:36px;font-weight:900;background:linear-gradient(135deg,var(--accent),var(--gold));-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.stat .label{font-size:13px;color:var(--text2);margin-top:4px}
+
+/* Footer */
+footer{text-align:center;padding:40px 20px;color:var(--text2);font-size:13px;border-top:1px solid rgba(255,255,255,.05)}
+footer a{color:var(--accent);text-decoration:none}
+
+/* Drone animation */
+.drone-icon{display:inline-block;animation:droneHover 2s ease-in-out infinite}
+@keyframes droneHover{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
+
+/* Responsive */
+@media(max-width:600px){
+  .hero h1{font-size:28px}
+  section{padding:50px 0}
+  .card{padding:24px}
+}
+
+/* Scroll down */
+.scroll-down{position:absolute;bottom:30px;left:50%;transform:translateX(-50%);animation:bounce 2s infinite;color:var(--text2);font-size:14px}
+@keyframes bounce{0%,20%,50%,80%,100%{transform:translateX(-50%) translateY(0)}40%{transform:translateX(-50%) translateY(-12px)}60%{transform:translateX(-50%) translateY(-6px)}}
+</style>
+</head>
+<body>
+<canvas id="bg"></canvas>
+<div class="container">
+
+<!-- Hero -->
+<section class="hero">
+  <div class="avatar">&#128640;</div>
+  <h1>傅辰钰</h1>
+  <p class="subtitle">河南地矿职业学院 · 22级无人机一班</p>
+  <p class="location">&#128205; 河南省安阳市 · 殷墟故土 · 甲骨文诞生之地</p>
+  <div class="scroll-down">▼ 往下看</div>
+</section>
+
+<!-- 关于 -->
+<section>
+  <h2 class="section-title"><span>关 于 我</span></h2>
+  <div class="card">
+    <p>生于华夏腹地河南安阳，殷墟故土，甲骨文诞生之地。从小在三千年前的文明密码中长大，骨子里刻着探索的基因。</p>
+    <br>
+    <p>河南地矿职业学院 <strong>22级无人机一班</strong>主力。不是在地面仰望天空，而是用无人机改写天空的规则。测绘、航拍、编队飞行、三维建模——别人用眼睛看世界，我用螺旋桨丈量大地。</p>
+    <br>
+    <p>技术栈横跨 <strong>Python、Web开发、AI应用</strong>，独立开发并部署了个人项目，擅长在不可能中找到可能，在代码中找到秩序。</p>
+    <br>
+    <p>有团队带团队，没团队一个人就是一支军队。信奉：<strong>能飞多高，取决于敢飞多高。</strong></p>
+  </div>
+</section>
+
+<!-- 项目 -->
+<section>
+  <h2 class="section-title"><span>项 目 作 品</span></h2>
+  <div class="grid">
+    <div class="card">
+      <div class="icon">&#128197;</div>
+      <h3>记事日历 PWA</h3>
+      <p>集成日历、倒计时、任务记录的全栈 Web 应用，支持离线使用，手机端 PWA 安装。日均覆盖全国用户，零成本部署于云端。</p>
+    </div>
+    <div class="card">
+      <div class="icon drone-icon">&#128745;</div>
+      <h3>无人机测绘建模</h3>
+      <p>熟练掌握航测规划、正射影像处理、三维点云重建。从大疆精灵到行业级飞控，从农田测绘到建筑建模，实战经验丰富。</p>
+    </div>
+    <div class="card">
+      <div class="icon">&#129302;</div>
+      <h3>AI 应用开发</h3>
+      <p>基于大语言模型开发智能助手，实现浏览器自动化、系统管理、远程部署。精通 Prompt Engineering 与 Agent 架构设计。</p>
+    </div>
+    <div class="card">
+      <div class="icon">&#128421;</div>
+      <h3>系统运维自动化</h3>
+      <p>Windows 环境全链路优化，从开机加速到浏览器广告清理，从磁盘管理到定时任务编排。让电脑跑得像新的一样。</p>
+    </div>
+  </div>
+</section>
+
+<!-- 技能 -->
+<section>
+  <h2 class="section-title"><span>技 术 栈</span></h2>
+  <div class="skill-tags">
+    <span class="skill-tag hot">Python</span>
+    <span class="skill-tag">HTML5 / CSS3</span>
+    <span class="skill-tag">JavaScript</span>
+    <span class="skill-tag hot">AI Prompt Engineering</span>
+    <span class="skill-tag">PWA 开发</span>
+    <span class="skill-tag">Git / GitHub</span>
+    <span class="skill-tag">无人机操控</span>
+    <span class="skill-tag">航拍摄影</span>
+    <span class="skill-tag hot">系统运维</span>
+    <span class="skill-tag">Windows 优化</span>
+    <span class="skill-tag">三维建模</span>
+    <span class="skill-tag">Node.js</span>
+  </div>
+</section>
+
+<!-- 数据 -->
+<section>
+  <h2 class="section-title"><span>数 据 亮 点</span></h2>
+  <div class="stats">
+    <div class="stat"><div class="num">10+</div><div class="label">独立项目</div></div>
+    <div class="stat"><div class="num">100%</div><div class="label">交付率</div></div>
+    <div class="stat"><div class="num">PWA</div><div class="label">云端上线</div></div>
+    <div class="stat"><div class="num">24/7</div><div class="label">在线服务</div></div>
+  </div>
+</section>
+
+<!-- 经历 -->
+<section>
+  <h2 class="section-title"><span>成 长 轨 迹</span></h2>
+  <div class="timeline">
+    <div class="timeline-item">
+      <div class="year">2022</div>
+      <h3>考入河南地矿职业学院</h3>
+      <p>进入22级无人机一班，开启无人系统与技术探索之旅</p>
+    </div>
+    <div class="timeline-item">
+      <div class="year">2023</div>
+      <h3>深耕无人机应用</h3>
+      <p>掌握航测、建模、编队飞行等核心技能，多次完成实战测绘任务</p>
+    </div>
+    <div class="timeline-item">
+      <div class="year">2024</div>
+      <h3>跨界编程与 AI</h3>
+      <p>自学 Python 全栈开发，构建个人项目，将 AI 能力融入日常工具链</p>
+    </div>
+    <div class="timeline-item">
+      <div class="year">2025</div>
+      <h3>独立开发 + 云端部署</h3>
+      <p>记事日历 PWA 上线 GitHub Pages，AI 自动化工作流覆盖日常运维全场景</p>
+    </div>
+    <div class="timeline-item">
+      <div class="year">2026</div>
+      <h3>持续迭代，探索未知</h3>
+      <p>技术栈持续扩张，从地面到云端，从代码到天空，边界由自己定义</p>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <p>傅辰钰 · 河南地矿职业学院 · 22级无人机一班</p>
+  <p>河南省安阳市 · <span style="color:var(--accent)">以代码丈量世界，用无人机改写规则</span></p>
+  <p style="margin-top:12px;opacity:.5">Made with &#10084; by 傅辰钰</p>
+</footer>
+
+</div>
+
+<script>
+// 星空背景粒子
+const canvas = document.getElementById('bg');
+const ctx = canvas.getContext('2d');
+let w, h, particles = [];
+
+function resize() {
+  w = canvas.width = window.innerWidth;
+  h = canvas.height = document.body.scrollHeight;
+}
+resize();
+window.addEventListener('resize', () => { resize(); init(); });
+
+class Particle {
+  constructor() {
+    this.x = Math.random() * w;
+    this.y = Math.random() * h;
+    this.size = Math.random() * 1.5 + 0.5;
+    this.speed = Math.random() * 0.3 + 0.1;
+    this.opacity = Math.random() * 0.5 + 0.2;
+  }
+  update() {
+    this.y -= this.speed;
+    if (this.y < -10) { this.y = h + 10; this.x = Math.random() * w; }
+  }
+  draw() {
+    ctx.beginPath();
+    ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+    ctx.fillStyle = `rgba(0,212,255,${this.opacity})`;
+    ctx.fill();
+  }
+}
+
+function init() {
+  particles = [];
+  const count = Math.floor((w * h) / 8000);
+  for (let i = 0; i < count; i++) particles.push(new Particle());
+}
+init();
+
+function animate() {
+  ctx.clearRect(0, 0, w, h);
+  particles.forEach(p => { p.update(); p.draw(); });
+  requestAnimationFrame(animate);
+}
+animate();
+
+let lastH = h;
+setInterval(() => {
+  if (document.body.scrollHeight !== lastH) { resize(); init(); lastH = document.body.scrollHeight; }
+}, 2000);
+</script>
+</body>
+</html>
