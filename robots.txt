@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://zaijujue.github.io/fuchenyu/sitemap.xml
