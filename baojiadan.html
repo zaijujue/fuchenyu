@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>200kV红外电力巡检报价单 | 傅辰钰</title>
+<style>
+:root{--bg:#0a0a0f;--card:#121222;--border:rgba(255,255,255,0.07);--c1:#b8934f;--c2:#e0c680;--t1:#ece4d0;--t2:#8a8270;--warn:#e0553d;--ok:#4caf7a;--blue:#5d9cec}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:"PingFang SC","Microsoft YaHei",-apple-system,sans-serif;background:var(--bg);color:var(--t1);line-height:1.7;padding:30px}
+h1{font-size:28px;font-weight:900;text-align:center;margin-bottom:6px;letter-spacing:2px}
+h1 span{background:linear-gradient(135deg,var(--c1),var(--c2));-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.subtitle{text-align:center;color:var(--t2);font-size:13px;margin-bottom:30px}
+.container{max-width:1100px;margin:0 auto}
+.card{background:var(--card);border-radius:20px;padding:40px;margin-bottom:30px;border:1px solid var(--border)}
+.card h2{font-size:20px;font-weight:800;margin-bottom:8px;color:var(--c1)}
+.card .desc{color:var(--t2);font-size:13px;margin-bottom:24px}
+
+table{width:100%;border-collapse:collapse;font-size:14px}
+thead th{text-align:left;padding:14px 12px;border-bottom:2px solid var(--c1);font-size:12px;letter-spacing:1px;text-transform:uppercase;color:var(--c1)}
+tbody td{padding:14px 12px;border-bottom:1px solid var(--border);vertical-align:top}
+tbody tr:hover{background:rgba(196,163,90,.03)}
+.r{text-align:right;font-weight:700}
+.b{font-weight:700}
+.note{color:var(--t2);font-size:12px}
+.total-row td{border-top:2px solid var(--c1);border-bottom:none;font-size:18px;font-weight:900;padding:20px 12px}
+.total-row .r{color:var(--c2);font-size:22px}
+
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px}
+.info-item{text-align:center}
+.info-item .label{font-size:11px;color:var(--t2);letter-spacing:2px;text-transform:uppercase;margin-bottom:4px}
+.info-item .value{font-size:16px;font-weight:700}
+
+.footer{text-align:center;color:var(--t2);font-size:12px;margin-top:30px;padding:20px}
+.footer p{margin:4px 0}
+</style>
+</head>
+<body>
+<div class="container">
+
+<h1><span>200kV 红外电力巡检</span> 报价单</h1>
+<p class="subtitle">编制：傅辰钰 ｜ 河南地矿职业学院 · 无人机应用技术 ｜ 报价日期：2026年7月</p>
+
+<!-- 基本信息 -->
+<div class="card">
+  <div class="grid">
+    <div class="info-item"><div class="label">项目名称</div><div class="value">200kV 输电线路红外无人机巡检</div></div>
+    <div class="info-item"><div class="label">巡检长度</div><div class="value">50 公里（单回线）</div></div>
+    <div class="info-item"><div class="label">杆塔数量</div><div class="value">约 200 基</div></div>
+    <div class="info-item"><div class="label">电压等级</div><div class="value">200 kV 交流</div></div>
+    <div class="info-item"><div class="label">巡检方式</div><div class="value">多旋翼无人机 + 红外热成像</div></div>
+    <div class="info-item"><div class="label">工期预估</div><div class="value">15 个工作日</div></div>
+  </div>
+</div>
+
+<!-- 设备租赁与耗材 -->
+<div class="card">
+  <h2>一、设备租赁与耗材</h2>
+  <p class="desc">含飞行平台、红外载荷、RTK 定位模块、备用电池、充电设备</p>
+  <table>
+    <thead><tr><th>序号</th><th>设备名称</th><th>型号 / 规格</th><th>数量</th><th>单价 (元)</th><th>小计 (元)</th><th>备注</th></tr></thead>
+    <tbody>
+      <tr><td>1</td><td>行业级多旋翼无人机</td><td>大疆 Matrice 350 RTK</td><td class="r">2 台</td><td class="r">4,500 / 天</td><td class="r b">135,000</td><td class="note">含飞控系统、RTK 基站</td></tr>
+      <tr><td>2</td><td>红外热成像云台</td><td>大疆 Zenmuse H30T / 红外分辨率 1280×1024</td><td class="r">2 台</td><td class="r">2,000 / 天</td><td class="r b">60,000</td><td class="note">支持测温范围 -40°C ~ 550°C, NETD ≤ 30mK</td></tr>
+      <tr><td>3</td><td>备用红外云台</td><td>大疆 Zenmuse H20T</td><td class="r">1 台</td><td class="r">1,500 / 天</td><td class="r b">22,500</td><td class="note">备用，防主设备故障</td></tr>
+      <tr><td>4</td><td>TB65 智能飞行电池</td><td>DJI TB65 5880mAh</td><td class="r">16 块</td><td class="r">120 / 块/天</td><td class="r b">28,800</td><td class="note">每台配8块，含循环损耗</td></tr>
+      <tr><td>5</td><td>电池充电站</td><td>DJI BS65 智能充电箱</td><td class="r">2 台</td><td class="r">300 / 台/天</td><td class="r b">9,000</td><td class="note">同时充 8 块电池</td></tr>
+      <tr><td>6</td><td>便携式发电机</td><td>本田 EU22i 2.2kW</td><td class="r">1 台</td><td class="r">200 / 天</td><td class="r b">3,000</td><td class="note">野外供电保障</td></tr>
+      <tr><td>7</td><td>高亮监视屏</td><td>DJI CrystalSky 7.85"</td><td class="r">2 台</td><td class="r">200 / 台/天</td><td class="r b">6,000</td><td class="note">强光下可见监视器</td></tr>
+      <tr><td>8</td><td>备用电台 / 4G模块</td><td>DJI 4G Dongle</td><td class="r">2 套</td><td class="r">100 / 天</td><td class="r b">3,000</td><td class="note">BVLOS 超视距飞行保障</td></tr>
+      <tr><td>9</td><td>存储设备</td><td>三星 T7 2TB + 移动工作站 SSD</td><td class="r">3 台</td><td class="r">一次性 800</td><td class="r b">2,400</td><td class="note">红外数据量大，2TB起</td></tr>
+      <tr class="total-row"><td colspan="5" style="text-align:right">设备合计</td><td class="r">269,700</td><td></td></tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- 人员费用 -->
+<div class="card">
+  <h2>二、人员费用</h2>
+  <p class="desc">含飞手、机务、数据分析师、现场安全员</p>
+  <table>
+    <thead><tr><th>序号</th><th>岗位</th><th>人数</th><th>资质要求</th><th>日薪 (元)</th><th>工期 (天)</th><th>小计 (元)</th></tr></thead>
+    <tbody>
+      <tr><td>1</td><td>主飞手（红外巡检）</td><td class="r">2 人</td><td class="note">CAAC 超视距驾驶员 + 红外热成像认证</td><td class="r">1,500</td><td class="r">15</td><td class="r b">45,000</td></tr>
+      <tr><td>2</td><td>机务 / 地面保障</td><td class="r">1 人</td><td class="note">熟悉 DJI 全系列维护，应急排故</td><td class="r">800</td><td class="r">15</td><td class="r b">12,000</td></tr>
+      <tr><td>3</td><td>红外数据分析师</td><td class="r">2 人</td><td class="note">取得 UL/ASNT 红外 Level I 及以上</td><td class="r">1,200</td><td class="r">15</td><td class="r b">36,000</td></tr>
+      <tr><td>4</td><td>现场安全员</td><td class="r">1 人</td><td class="note">持有安全 C 证或以上，熟悉电力安规</td><td class="r">600</td><td class="r">15</td><td class="r b">9,000</td></tr>
+      <tr><td>5</td><td>项目负责人</td><td class="r">1 人</td><td class="note">PMP 或等同项目管理经验</td><td class="r">1,200</td><td class="r">15</td><td class="r b">18,000</td></tr>
+      <tr class="total-row"><td colspan="6" style="text-align:right">人员合计</td><td class="r">120,000</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- 巡检服务明细 -->
+<div class="card">
+  <h2>三、巡检服务项目明细</h2>
+  <p class="desc">按行业标准 DL/T 1482-2015 执行，200kV 线路每基杆塔巡检项目</p>
+  <table>
+    <thead><tr><th>序号</th><th>巡检项目</th><th>检测内容</th><th>杆塔数量</th><th>单价 (元/基)</th><th>小计 (元)</th></tr></thead>
+    <tbody>
+      <tr><td>1</td><td>绝缘子串红外检测</td><td class="note">检测绝缘子串整体温度分布，识别低值/零值绝缘子、污秽闪络、局部放电热点</td><td class="r">200</td><td class="r">180</td><td class="r b">36,000</td></tr>
+      <tr><td>2</td><td>导线接头/耐张线夹红外检测</td><td class="note">检测导线接续管、耐张线夹、引流板等连接件的过热点，温差超过 10K 判定为缺陷</td><td class="r">200</td><td class="r">150</td><td class="r b">30,000</td></tr>
+      <tr><td>3</td><td>避雷器/计数器红外检测</td><td class="note">氧化锌避雷器本体及泄漏电流表温度异常检测</td><td class="r">200</td><td class="r">100</td><td class="r b">20,000</td></tr>
+      <tr><td>4</td><td>隔离开关/断路器触头检测</td><td class="note">变电站侧隔离开关触头、断路器接线板等红外测温</td><td class="r">200</td><td class="r">120</td><td class="r b">24,000</td></tr>
+      <tr><td>5</td><td>均压环/屏蔽环红外检测</td><td class="note">检测均压环与导线接触不良导致的异常发热</td><td class="r">200</td><td class="r">80</td><td class="r b">16,000</td></tr>
+      <tr><td>6</td><td>可见光同步拍摄</td><td class="note">每基杆塔同步拍摄高清可见光影像，建立双光视觉档案</td><td class="r">200</td><td class="r">60</td><td class="r b">12,000</td></tr>
+      <tr><td>7</td><td>通道环境巡检</td><td class="note">检测线下树木、建筑物、施工机械等距线路的净空距离</td><td class="r">200</td><td class="r">50</td><td class="r b">10,000</td></tr>
+      <tr class="total-row"><td colspan="5" style="text-align:right">巡检服务合计</td><td class="r">148,000</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- 数据处理与报告 -->
+<div class="card">
+  <h2>四、数据处理与报告编制</h2>
+  <p class="desc">红外数据分析、缺陷定级、报告生成</p>
+  <table>
+    <thead><tr><th>序号</th><th>服务内容</th><th>执行标准</th><th>产出物</th><th>单价 (元)</th></tr></thead>
+    <tbody>
+      <tr><td>1</td><td>红外图像预处理</td><td class="note">温度标定、辐射率校正、环境温度补偿</td><td class="note">每基杆塔校准后红外图集</td><td class="r b">12,000</td></tr>
+      <tr><td>2</td><td>缺陷自动识别 + 人工复核</td><td class="note">DL/T 664-2016 红外诊断应用规范</td><td class="note">缺陷分类清单（一般/严重/危急）</td><td class="r b">18,000</td></tr>
+      <tr><td>3</td><td>三维测温模型重建</td><td class="note">基于 Pix4Dmapper 的点云 + 热力图融合</td><td class="note">三维可视化温度模型</td><td class="r b">25,000</td></tr>
+      <tr><td>4</td><td>巡检报告编制</td><td class="note">DL/T 741-2019 架空输电线路运行规程</td><td class="note">PDF 报告 + Word 可编辑版 + 数据包</td><td class="r b">15,000</td></tr>
+      <tr><td>5</td><td>历史数据对比分析</td><td class="note">与往期巡检数据进行温差趋势分析</td><td class="note">趋势图表 + 劣化速率评估</td><td class="r b">8,000</td></tr>
+      <tr class="total-row"><td colspan="3" style="text-align:right">数据处理合计</td><td class="r">78,000</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- 交通住宿 -->
+<div class="card">
+  <h2>五、差旅、交通与食宿</h2>
+  <table>
+    <thead><tr><th>序号</th><th>项目</th><th>明细</th><th>数量</th><th>单价 (元)</th><th>小计 (元)</th></tr></thead>
+    <tbody>
+      <tr><td>1</td><td>设备运输车辆</td><td class="note">SUV / MPV，含燃油及过路费</td><td class="r">1 辆</td><td class="r">500 / 天</td><td class="r b">7,500</td></tr>
+      <tr><td>2</td><td>人员住宿</td><td class="note">双人标间 × 4 间</td><td class="r">15 天</td><td class="r">200 / 间</td><td class="r b">12,000</td></tr>
+      <tr><td>3</td><td>人员餐饮补贴</td><td class="note">7 人</td><td class="r">15 天</td><td class="r">80 / 人/天</td><td class="r b">8,400</td></tr>
+      <tr><td>4</td><td>现场临时办公</td><td class="note">移动工作站、折叠桌椅、遮阳帐篷</td><td class="r">一次性</td><td class="r">2,000</td><td class="r b">2,000</td></tr>
+      <tr class="total-row"><td colspan="5" style="text-align:right">差旅合计</td><td class="r">29,900</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- 安全与保险 -->
+<div class="card">
+  <h2>六、安全防护与保险</h2>
+  <table>
+    <thead><tr><th>序号</th><th>项目</th><th>内容</th><th>小计 (元)</th></tr></thead>
+    <tbody>
+      <tr><td>1</td><td>设备保险</td><td class="note">无人机机身险 + 第三者责任险，总保额 200 万元</td><td class="r b">15,000</td></tr>
+      <tr><td>2</td><td>人员意外险</td><td class="note">7 人 × 100 万人身意外 + 10 万医疗</td><td class="r b">5,600</td></tr>
+      <tr><td>3</td><td>安全防护装备</td><td class="note">安全帽、绝缘鞋、高压警示服、急救包、灭火器</td><td class="r b">3,500</td></tr>
+      <tr><td>4</td><td>空域协调与备案</td><td class="note">向当地民航 / 军方报备飞行计划，空域使用许可</td><td class="r b">5,000</td></tr>
+      <tr class="total-row"><td colspan="3" style="text-align:right">安全与保险合计</td><td class="r">29,100</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- 汇总 -->
+<div class="card" style="background:linear-gradient(135deg,var(--card),rgba(196,163,90,.04));border-color:rgba(196,163,90,.2)">
+  <h2 style="color:var(--c2);text-align:center">费用汇总</h2>
+  <table>
+    <tbody>
+      <tr><td>一、设备租赁与耗材</td><td class="r b">269,700 元</td></tr>
+      <tr><td>二、人员费用</td><td class="r b">120,000 元</td></tr>
+      <tr><td>三、巡检服务项目明细</td><td class="r b">148,000 元</td></tr>
+      <tr><td>四、数据处理与报告编制</td><td class="r b">78,000 元</td></tr>
+      <tr><td>五、差旅、交通与食宿</td><td class="r b">29,900 元</td></tr>
+      <tr><td>六、安全防护与保险</td><td class="r b">29,100 元</td></tr>
+      <tr class="total-row"><td style="font-size:20px;color:var(--c1)">含税总价</td><td class="r" style="font-size:28px">674,700 元</td></tr>
+    </tbody>
+  </table>
+  <p class="note" style="text-align:center;margin-top:16px">以上报价含增值税（税率 6%），50公里双回线路巡检，超出部分按比例追加。</p>
+</div>
+
+<!-- 条款 -->
+<div class="card" style="background:var(--card)">
+  <h2>备注条款</h2>
+  <table>
+    <tbody>
+      <tr><td>1.</td><td class="note">报价有效期 30 天，自报价日 2026年7月7日起。</td></tr>
+      <tr><td>2.</td><td class="note">付款方式：签订合同后付 40%，外业完成付 40%，提交报告后付 20%。</td></tr>
+      <tr><td>3.</td><td class="note">因天气原因（风速 ≥ 10.7m/s、中雨及以上、雷暴）导致停工的，工期顺延，不收取额外费用。</td></tr>
+      <tr><td>4.</td><td class="note">巡检中发现紧急/重大缺陷，2 小时内电话通知甲方，4 小时内出具加急简报。</td></tr>
+      <tr><td>5.</td><td class="note">交付物：红外巡检报告（PDF + Word）、缺陷清单（Excel）、热力图集、三维温度模型（.obj 格式）、原始红外数据包。</td></tr>
+      <tr><td>6.</td><td class="note">质保服务：报告交付后 30 日内，免费提供数据复核与答疑。</td></tr>
+      <tr><td>7.</td><td class="note">增减巡检杆塔数量按单基价格比例调整。</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="footer">
+  <p>报价人：傅辰钰 | 河南地矿职业学院 · 22级无人机一班</p>
+  <p>联系方式：zaijujue21@gmail.com</p>
+  <p>地址：河南省安阳市 | 以代码丈量世界，用无人机改写规则</p>
+</div>
+
+</div>
+</body>
+</html>
